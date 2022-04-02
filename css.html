@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sitem</title>
+    <link rel="stylesheet" href="sytle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR BAŞLANGICI -->
+    <div>
+        <nav>
+            <div class="logoDiv">
+                WİSSEN AKADEMİE
+            </div>
+            <div class="pageDiv">
+                <div id="anasayfa">
+                    <a href="">ANA SAYFA</a>
+                </div>
+                <div id="pageHtml">
+                    <a href="index.html">HTML</a>
+                </div>
+                <div id="pageCss">
+                    <a href="">CSS</a>
+                </div>
+                <div id="pages">
+                    <a href="#bootstrap">BOOTSTRAP</a>
+                </div>
+                <div id="pages">
+                    <a href="#javaScript">JAVASCRIPT</a>
+                </div>
+                <div id="pages">
+                    <a href="#jquery">JQUERY</a>
+                </div>
+                <div id="pages">
+                    <a href="">HAKKIMDA</a>
+                </div>
+                <div id="pages">
+                    <a href="#iletisim">ILETISIM</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- NAVBAR BİTİŞİ -->
+    <!-- ----------------------------------- -->
+    <!-- CSS BAŞLANGIÇ -->
+    <div class="css">
+        <div class="title">CSS</div>
+        <div class="cssExplanation">
+            <p>Merhabalar öncelikle ben osman wissen akademie sürekli eğitim merkezinde web ve mobil programlama bölümü
+                kursiyerim bu gün sizlere flex yapısı hakkındaki bilgilerimi paylaşacağım.
+                Öncelikle flex yapusı bizim nerede işimize yarar? Bu sorunun cevabı oldukça basit biz sitemizin ön
+                yüzünde tag(nesne)lerimizi yerleştirme yaparken bize esneklik sağlar. Esneklikten kastım şudur:
+                orneğin div tagı bir blok elementtir blog elementler verilen width ve height değerleri ne olursa olsun
+                bir sonraki tag ı alt satıra atmaktadır fakat flex yapısını kullanarak bu olaydan kurtulabiliyoruz nasıl
+                mı? </p>
+            <p>Örnek: html kodlarımıza gelerek 1 div bloğumuzun içine 3 adet div bloğu oluşturalım ve alt tarafta olduğu
+                gibi css verelim
+            </p>
+            <div class="ilkHal">
+                <img src="Pictures/denemeHtml.PNG" alt="">
+                <img src="Pictures/denemeCss.PNG" alt="">
+            </div>
+            <p>Evet şuan bu html ve css kodlarımızı yazdığımıza göre çalıştırdığımızda bize alt resimde de gördüğümüz
+                gibi alt alt a farklı renklerden oluşan divleri gösterecek.</p>
+            <div>
+                <br>
+                <img src="Pictures/denemeIndex.PNG" alt="" srcset="">
+            </div>
+            <p>
+                <br>
+                Fakat biz bu divleri yan yana görmek istediğimiz bir projemiz olduğunu düşünürsek eğer işte bu kısımda
+                flex yapısında faydalanıyoruzbu kısımda mainDiv css ime display:flex ekleyerek şunu demiş oluyoruz benim
+                bütün nesnelerim inlineolacak yani blok da olsa inline da olsa html bu nesneleri inline algılayacak.
+                Hemen deneyelim. Css dosyama gidip mainDiv css ime display:flex; i ekliyorum
+            </p>
+            <div>
+                <br>
+                <img src="Pictures/denemeIndex2.PNG" alt="">
+            </div>
+            <p>
+                Bakın gördüğünüz gibi artık nesnelerim yan yana geldi. Aslında display:flex in asıl amacı budur.
+                Fakat eğer istersek biz hem display özelliğine flex verip yine de ben nesnelerimi alt alta kullanmak
+                istiyorum derseniz ki bu bazen lazım oluyor bu durumda ise flex-direction: column; aracını kullanarak
+                html benim main divim in içerisindeki nesnelerin display özelliği flex olsun fakat ben bunları yinede
+                alt alta görmek istiyorum diyorsunuz aşşağıda olduğu gibi.
+            </p>
+            <div>
+                <br>
+                <img src="Pictures/denemeIndex.PNG" alt="" srcset="">
+            </div>
+
+            <p>
+                <br>
+                Şimdi diyeceksiniz ki ya ben zaten alt alta görüyordum nesnelerimi bu benim bir işime yaramadı bazı ince
+                ayrıntılar var örneğin bizim kullandığımız nesneler block element nesnelerdi yani divler di bunun yerine
+                biz block nesneler değilde inline nesneler kullansaydık html bunu bu nesneler inline olsa bile biz
+                flex-direction: column; ı eklediğimiz için bunları blok nesne olarak görecekti evet ne dediğimi daha iyi
+                anlamak için şimdi divlerimin yerine inline nesne olan span etiketini kullanarak 3 cümle yazacağım
+                bakalım nasıl olacak.
+            </p>
+            <div>
+                <br>
+                <img src="Pictures/spanHtml.PNG" alt="">
+                &emsp13;
+                &emsp13;
+                &emsp13;
+                <img src="Pictures/spanIndex.PNG" alt="">
+            </div>
+            <p>
+                <br>
+                Ust kısımda da gördüğümüz üzere flex-direction: column; özelliği sayesinde inline olan nesneleri block
+                yaptık peki flex yapısı sadece bu kadar için mi yarıyor işimize tabikide hayır nesneleri daha düzgün
+                yerletirmemize oldukça işe yarınyor bunlardan birisi justify-content özelliği eğer siz display:flex;
+                özelliği verir ve flex-direction: column; <span style="color: red; font-size: 20pt;">yapmazsanız</span>
+                justify-content:center özelliği size yatay hizalamayı ortalayacaktır. Hadi deneyelim bu kısımda daha iyi
+                anlamanız açısında ilk örneğimiz olan divler ile devam edeceğim ilk olarak css dosyamıza gidiyoruz ve
+                mainDiv css imize justify-content:center özelliğini ekliyoruz
+            </p>
+            <div>
+                <br>
+                <img src="Pictures/justifyCenter.PNG" alt="">
+            </div>
+            <p>
+                <br>
+                Evet gördüğümüz gibi justify-content:center özelliği bizim yan yana bulunan nesnelerimi ortaladı. ama
+                display:flex özelliği bu kadar ile de sınırlı değil size hizalama alanında dahada falza seçnek suyor
+                örnekler alt kısımda
+            </p>
+            <div>
+                <br>
+                <img src="Pictures/justifyAll.PNG" alt="">
+            </div>
+            <p>
+                <br>
+                1 numaralı görümü yapmak için justify-content:space-between özelliğini kullanıyoruz. <br>
+                2 numaralı görümü yapmak için justify-content:space-around <br>
+                3 numaralı görümü yapmak için ise justify-content:space-evenly özelliğini kullanıyoruz
+            </p>
+            <p>
+                Peki hocam bitti mi flex özelliği tabikide hayır pekala dikey de hizalama yapaken ne kullanıyoruz.
+                align-items: center; <br>
+                bu özellik ise size dikeyde ortalama sağalayacaktır.Hemen örneğimizde deneyelim ilk olarak mainDiv css
+                imize
+                align-items: center; özelliğini ekleyererk başlayalım.
+            </p>
+            <div>
+                <br>
+                <img src="Pictures/alignCenter.PNG" alt="">
+            </div>
+            <p>
+                <br>
+                Evet gördüğünüz gibi justify-content:center ve align-items:center özelliğini kullanarak nesnelerimi hem
+                yatay eksende hem dikey eksende hizalamarını kolay bir şekilde yaptık
+                <span style="color: red; font-size: 16pt;">ÖNEMLİ BİLGİ: Eğer bu iki özelliği flex-direction:column iken kullanır iseniz tam tersi bir
+                    hizlama yapacaktur yani biz justify-content i yatayda hizalamak için kullanırken
+                    flex-direction:column iken dikeyde hizalamak için kullanıyor olacağız aynı şekilde align-items
+                    özelliğinide de yatayda hizalama yapmak için kullanıyor olacağız.</span>
+            </p>
+            <p>
+                <br><br>
+                Benden bu kadar bildiklerimi sizlere aktardım başka bir blog da görüşmek üzere sağlıkla kalın
+            </p>
+        </div>
+    </div>
+    <!-- CSS BİTİŞ -->
+    <!-- ----------------------------------- -->
+    <footer id="iletisim">
+        <div class="link">
+            <a href="https://wissenakademie.com">Wissen Akademie</a>
+        </div>
+        <div class="contactDiv">
+            <div id="instagram">
+                <a href="https://www.instagram.com/wissenakademie/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </div>
+            <div id="facebook">
+                <a href="https://www.facebook.com/BAU.WissenAkademie/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </div>
+            <div id="twitter">
+                <a href="https://twitter.com/wissenakademie"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </div>
+            <div id="twitter">
+                <a href="https://www.linkedin.com/company/wissen-akademie/mycompany/"><i
+                        class="fa-brands fa-linkedin"></i>Linkedin</a>
+            </div>
+            <div class="tel">
+                Tel: &emsp; 0212 381 50 00 <br>
+                Mail:&emsp;wissenakademie@gmail.com
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

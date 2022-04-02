@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("Pictures/back.png");
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(92, 111, 205);
+    height: 60px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+.logoDiv{
+    width: 30%;
+    text-align: center;
+    color: rgb(229, 218, 218);
+    cursor: pointer;
+}
+.pageDiv{
+    display: flex;
+    width: 65%;
+    justify-content: space-around   ;
+}
+#pages{
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+#pages:hover{
+    background-color: rgb(51, 51, 98);
+}
+.pageDiv a{
+    text-decoration: none;
+    color: rgb(229, 218, 218);
+}
+#anasayfa{
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: red;
+}
+.slider{
+    margin-top: 50px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliders{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+.sliders img{
+    width: 800px;
+    height: 500px;  
+}
+.asd{
+    display: flex;
+}
+#prevSlide,#nextSlide{
+    top: 0;
+    font-size: 20pt;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    height: 500px;
+    line-height: 500px;
+}
+#prevSlide{
+    left: 15px;
+}
+#nextSlide{
+    right: 15px;
+}
+.d-none{
+    display: none;
+}
+.content{
+    padding: 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    margin-top: 50px;
+    background-color: orangered;
+    color: rgb(15, 15, 102);
+    width: 1200px;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.explanation{
+    height: 500px;
+    width: 1200px;
+    font-size: 16pt;
+    display: flex;  
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(229, 218, 218);
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(92, 111, 205);
+    height: 60px;
+    width: 100%;
+}
+.link{
+    font-size: 20pt;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.contactDiv{
+    display: flex;
+    width: 70%;
+    justify-content: space-around   ;
+    align-items: center;
+}
+.contactDiv a{
+    font-size: 16pt;
+    text-decoration: none;
+    color: rgb(229, 218, 218);
+}
+.contactDiv a i{
+    margin-right: 9px;
+}
+.tel{
+    color: rgb(229, 218, 218);
+    font-size: 14pt;
+}
+#pageHtml,#pageCss{
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+#pageHtml:hover,#pageCss:hover{
+    background-color: rgb(51, 51, 98);
+}
+#pageHtml a,#pageCss a{
+    text-decoration: none;
+    color: rgb(229, 218, 218);
+}
+.ilkHal{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.css{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cssExplanation{
+    padding: 20px;
+    width: 1200px;
+    font-size: 16pt;
+    display: flex;  
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(229, 218, 218);
+}
